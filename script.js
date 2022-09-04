@@ -5,13 +5,13 @@ loadXMLFeed = () => {
     .then(data => {
       let parser = new DOMParser();
       let xml = parser.parseFromString(data, 'application/xml');
-      displayTrafficList(xml);
+      displayFeedList(xml);
     })
 }
 
 document.addEventListener('DOMContentLoaded', loadXMLFeed);
 
-function displayTrafficList(x) {
+function displayFeedimageList(x) {
   let list = document.getElementById('item');
   let item = x.getElementsByTagName('item');
   let itemNum = x.getElementsByTagName('item').length;
