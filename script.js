@@ -11,7 +11,7 @@ loadXMLFeed = () => {
 
 document.addEventListener('DOMContentLoaded', loadXMLFeed);
 
-function displayFeedimageList(x) {
+function displayFeedList(x) {
   let list = document.getElementById('item');
   let item = x.getElementsByTagName('item');
   let itemNum = x.getElementsByTagName('item').length;
